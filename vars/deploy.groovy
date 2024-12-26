@@ -1,3 +1,4 @@
-def call(){
-  sh "docker compose down && docker up -d --build"
+def call() {
+    // Use Jenkins pipeline step 'sh' to execute shell commands
+    sh "docker compose down && docker compose up -d --build"
 }
